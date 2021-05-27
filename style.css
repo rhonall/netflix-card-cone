@@ -1,0 +1,196 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body, 
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.card {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 27.5rem;
+    width: 100%;
+    min-height: 25.625rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.detail {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(176deg, rgba(0, 0, 0, 0.473) 0%, rgba(0,0,0,1) 100%); 
+    padding: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    z-index: 10;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.detail-active {
+    transform: translateY(0%);
+}
+
+#close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.main {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin-bottom: 5em;
+}
+
+span {
+    color: rgb(212, 212, 212);
+}
+
+
+.card__top {
+    height: 245px;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+    width: 70px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.icon, 
+.flex-center {
+    align-items: center;
+}
+
+.flex-padding {
+    padding: 0 1rem;
+}
+
+.icon {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgb(172, 172, 172);
+    font-size: 1.3rem;
+    width: 2.6875rem;
+    height: 2.6875rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.icon:hover, 
+.icon:focus {
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+
+.icon ~ .icon {
+    margin-left: 0.4375rem;
+}
+
+
+.fa-play, 
+.fa-thumbs-up, 
+.fa-thumbs-down {
+    position: absolute;
+    right: 9px;
+}
+
+.fa-plus {
+    position: absolute;
+    right: 10.5px;
+}
+
+.fa-times {
+    position: absolute;
+    right: 12px;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    right: 10.5px;
+    top: 10.5px;
+} 
+
+.last {
+    margin-left: auto!important;
+}
+
+.border-1 {
+    border: 1px solid rgb(172, 172, 172);
+    padding: 0 0.5rem;
+}
+
+
+.border-2 {
+    font-size: 0.8rem;
+    border: 1px solid rgb(172, 172, 172);
+    padding: 0 0.4rem;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.infos > ul {
+    padding-left: 1.5rem;
+}
+
+.info ~ .info {
+    margin-left: 0.5rem;
+}
+
+.feature-center {
+    align-items: center;
+}
+
+.feature-icon {
+    font-size: 0.3rem;
+    margin: 0 0.6rem ;
+    color: rgba(172, 172, 172, 0.829);
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b2da8c914.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix Card Cone</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card__top">
+            <img class="logo" src="logo.png" alt="demon slayer logo">
+        </div>
+
+        <div class="card__bottom">
+            <div class="icons">
+                <ul class="flex flex-padding">
+                    <li class="icon flex"><i class="fas fa-play"></i></li>
+                    <li class="icon flex"><i class="fas fa-plus"></i></li>
+                    <li class="icon flex"><i class="far fa-thumbs-up"></i></li>
+                    <li class="icon flex"><i class="far fa-thumbs-down"></i></li>
+                    <li class="icon flex"><i class="fas fa-times"></i></li>      
+                    <li class="icon flex last"><i class="fas fa-chevron-down" id="drop-down"></i></li>      
+                </ul>
+            </div>
+            <div class="infos">
+                <ul class="flex">
+                    <li class="info border-1">MA 15+</li>
+                    <li class="info">1 Season</li>
+                    <li class="info border-2">HD</li>
+                </ul>
+            </div>
+            <div class="features">
+                <ul class="flex flex-padding feature-center">
+                    <li class="feature">Dark</li>
+                    <li class="feature"></li><i class="fas fa-circle feature-icon"></i>
+                    <li class="feature">Exciting</li>
+                    <li class="feature"></li><i class="fas fa-circle feature-icon"></i>
+                    <li class="feature">Fantasy Anime</li>
+                </ul>
+            </div>
+            <div class="detail">
+                <i class="fas fa-times" id="close-btn"></i>
+                <p class="main">After a demon attack leaves his family slain and his sister cursed, Tanjiro embarks upon a perilous journey to find a cure and avenge those he’s lost.</p>
+                <p><span>Cast:</span> Natsuki Hanae, Akari Kito, Hiro Shimono, more</p>
+                <p><span>Genres:</span> Japanese, TV Shows Based on Manga, Anime Series</p>
+                <p><span>This show is:</span> Dark, Exciting</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
